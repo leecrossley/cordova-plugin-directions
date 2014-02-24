@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="directions" version="0.0.1">
+    <name>Directions</name>
+    <author>Lee Crossley (http://ilee.co.uk/)</author>
+    <description>Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude).</description>
+    <keywords>cordova, direction, directions, map, maps, latitude, longitude, satnav</keywords>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <js-module src="www/directions.js" name="Directions">
+        <clobbers target="directions" />
+    </js-module>
+    <!--<platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Directions">
+                <param name="android-package" value="uk.co.ilee.directions.Directions" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/Directions.java" target-dir="src/uk/co/ilee/directions" />
+    </platform>-->
+</plugin>
