@@ -1,6 +1,6 @@
 //
 //  Directions.java
-//  Copyright (c) 2013 Lee Crossley - http://ilee.co.uk
+//  Copyright (c) 2014 Lee Crossley - http://ilee.co.uk
 //
 
 package uk.co.ilee.directions;
@@ -49,7 +49,7 @@ public class Directions extends CordovaPlugin {
 
 	private void doSendIntent(String latitude, String longitude) throws IOException {
 		final Intent intent = new Intent(android.content.Intent.ACTION_VIEW, 
-			Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"));
+			Uri.parse("http://maps.google.com/maps?f=d&daddr=" + latitude + "," + longitude));
 		intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
 		cordova.startActivityForResult(this, intent, 0);
 	}
