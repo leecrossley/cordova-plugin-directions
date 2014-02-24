@@ -22,7 +22,7 @@ directions.navigateTo("51.50722", "-0.12750"); // latitude, longitude
 
 ## Platforms
 
-Support for Android, Windows Phone 8 is coming.
+Support for Android and Windows Phone 8.
 
 ## License
 
