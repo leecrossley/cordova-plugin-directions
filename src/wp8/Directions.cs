@@ -26,10 +26,7 @@ namespace Cordova.Extension.Commands
 
             var directions = new BingMapsDirectionsTask
             {
-                End = new LabeledMapLocation
-                {
-                    Location = new GeoCoordinate(location.Latitude, location.Longitude)
-                }
+                End = new LabeledMapLocation("Destination", new GeoCoordinate(location.Latitude, location.Longitude))
             };
             directions.Show();
             DispatchCommandResult(new PluginResult(PluginResult.Status.OK));
