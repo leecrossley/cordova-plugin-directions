@@ -2,8 +2,6 @@
 
 Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude).
 
-**This plugin is a WIP**
-
 ## 1 step install
 
 ```
@@ -16,9 +14,15 @@ You **do not** need to reference any JavaScript, the Cordova plugin architecture
 
 Ensure you use the plugin after your deviceready event has been fired.
 
+### Navigate to a latitude and longitude
+
+```
+directions.navigateTo("51.50722", "-0.12750"); // latitude, longitude
+```
+
 ## Platforms
 
-The aim is to provide support for Android and Windows Phone 8.
+Support for Android, Windows Phone 8 is coming.
 
 ## License
 
