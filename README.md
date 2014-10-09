@@ -5,7 +5,7 @@ Cordova Directions Plugin to utilise native maps for satnav style direction purp
 ## 1 step install
 
 ```
-cordova plugin add https://github.com/leecrossley/cordova-plugin-directions.git
+cordova plugin add https://github.com/sburning/cordova-plugin-directions.git
 ```
 
 ## Usage
