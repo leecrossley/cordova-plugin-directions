@@ -30,14 +30,26 @@ public class Directions extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		JSONObject json = args.getJSONObject(0);
-		String latitude = getJSONProperty(json, "latitude");
-		String longitude = getJSONProperty(json, "longitude");
-		try {
-			doSendIntent(latitude, longitude);
-		} catch (IOException e) {
-			e.printStackTrace();
+		
+		if(json.has("address")) {
+    			String address =getJSONProperty(json, "address");
+    			try {
+			doSendIntent(address);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}else
+		{
+			String latitude = getJSONProperty(json, "latitude");
+			String longitude = getJSONProperty(json, "longitude");
+			try {
+				doSendIntent(latitude, longitude);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
-		return true;
+			return true;
+		
 	}
 	
 	private String getJSONProperty(JSONObject json, String property) throws JSONException {
@@ -50,6 +62,13 @@ public class Directions extends CordovaPlugin {
 	private void doSendIntent(String latitude, String longitude) throws IOException {
 		final Intent intent = new Intent(android.content.Intent.ACTION_VIEW, 
 			Uri.parse("http://maps.google.com/maps?f=d&daddr=" + latitude + "," + longitude));
+		intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+		cordova.startActivityForResult(this, intent, 0);
+	}
+	
+	private void doSendIntent(String address) throws IOException {
+		final Intent intent = new Intent(android.content.Intent.ACTION_VIEW, 
+			Uri.parse("http://maps.google.com/maps?f=d&daddr=" + address));
 		intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
 		cordova.startActivityForResult(this, intent, 0);
 	}
