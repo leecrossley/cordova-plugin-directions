@@ -23,7 +23,7 @@ directions.navigateTo("51.50722", "-0.12750"); // latitude, longitude
 ### Navigate to an address
 
 ```
-directions.navigateTo("123 Main St. Orlando, Florida"); // address
+directions.navigateToAddress("123 Main St. Orlando, Florida"); // address
 ```
 
 ## Platforms
