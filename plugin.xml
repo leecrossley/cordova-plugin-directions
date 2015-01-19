@@ -19,7 +19,7 @@
         <source-file src="src/android/Directions.java" target-dir="src/uk/co/ilee/directions" />
     </platform>
     <platform name="wp8">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="Directions">
                 <param name="wp-package" value="Directions"/>
             </feature>
