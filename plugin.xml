@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="uk.co.ilee.directions" version="0.1.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        id="uk.co.ilee.directions" version="0.1.2">
     <name>Directions</name>
     <author>Lee Crossley (http://ilee.co.uk/)</author>
     <description>Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude).</description>
