@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-        id="uk.co.ilee.directions" version="0.2.0">
+        id="uk.co.ilee.directions" version="0.2.1">
     <name>Directions</name>
     <author>Lee Crossley (http://ilee.co.uk/)</author>
-    <description>Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude).</description>
-    <keywords>cordova, direction, directions, map, maps, latitude, longitude, satnav</keywords>
+    <description>Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).</description>
+    <keywords>cordova, direction, directions, map, maps, latitude, longitude, satnav, address</keywords>
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
