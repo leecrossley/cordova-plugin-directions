@@ -4,6 +4,14 @@ Cordova Directions Plugin to utilise native maps for satnav style direction purp
 
 ## Install
 
+#### Latest published version on npm (with Cordova CLI >= 5.0.0)
+
+```
+cordova plugin add cordova-plugin-directions
+```
+
+#### Latest version from GitHub
+
 ```
 cordova plugin add https://github.com/leecrossley/cordova-plugin-directions.git
 ```
