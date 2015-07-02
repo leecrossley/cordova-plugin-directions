@@ -1,4 +1,4 @@
-## Directions Plugin for Apache Cordova
+## Directions Plugin for Apache Cordova [![npm version](https://badge.fury.io/js/cordova-plugin-directions.svg)](http://badge.fury.io/js/cordova-plugin-directions)
 
 Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).
 
@@ -15,6 +15,16 @@ cordova plugin add cordova-plugin-directions
 ```
 cordova plugin add https://github.com/leecrossley/cordova-plugin-directions.git
 ```
+
+#### PhoneGap build
+
+Add the following to your `config.xml` to use version 0.3.1 (you can also omit the version attribute to always use the latest version). You should now use the npm source:
+
+```
+<gap:plugin name="cordova-plugin-directions" version="0.3.1" source="npm" />
+```
+
+For more information, see the [PhoneGap build docs](http://docs.build.phonegap.com/en_US/configuring_plugins.md.html#Plugins).
 
 ## Usage
 
