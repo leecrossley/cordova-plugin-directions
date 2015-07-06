@@ -2,29 +2,13 @@
 
 Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).
 
+This Plugin is based on [Lee Crossley](http://ilee.co.uk/)'s [work](https://github.com/leecrossley/cordova-plugin-directions), which was lack of support for iOS.
+
 ## Install
 
-#### Latest published version on npm (with Cordova CLI >= 5.0.0)
-
 ```
-cordova plugin add cordova-plugin-directions
+cordova plugin add https://github.com/starsasumi/cordova-plugin-directions.git
 ```
-
-#### Latest version from GitHub
-
-```
-cordova plugin add https://github.com/leecrossley/cordova-plugin-directions.git
-```
-
-#### PhoneGap build
-
-Add the following to your `config.xml` to use version 0.3.1 (you can also omit the version attribute to always use the latest version). You should now use the npm source:
-
-```
-<gap:plugin name="cordova-plugin-directions" version="0.3.1" source="npm" />
-```
-
-For more information, see the [PhoneGap build docs](http://docs.build.phonegap.com/en_US/configuring_plugins.md.html#Plugins).
 
 ## Usage
 
@@ -38,7 +22,7 @@ Ensure you use the plugin after your `deviceready` event has been fired.
 directions.navigateTo("51.50722", "-0.12750"); // latitude, longitude
 ```
 
-### Navigate to an address (Android only)
+### Navigate to an address (iOS and Android only)
 
 ```
 directions.navigateToAddress("123 Main St. Orlando, Florida"); // address
@@ -46,7 +30,7 @@ directions.navigateToAddress("123 Main St. Orlando, Florida"); // address
 
 ## Platforms
 
-Support for Android and Windows Phone 8. Address navigation is available on Android only.
+Support for iOS, Android and Windows Phone 8. Address navigation is available on iOS and Android only.
 
 ## License
 
