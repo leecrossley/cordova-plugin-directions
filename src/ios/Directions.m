@@ -23,7 +23,7 @@
 {
     
     NSString* callbackId = [command callbackId];
-    NSString* address = [[[command arguments] objectAtIndex:0] valueForKey:@"adresse"];
+    NSString* address = [[[command arguments] objectAtIndex:0] valueForKey:@"address"];
     
     NSString* url = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%@", address];
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
