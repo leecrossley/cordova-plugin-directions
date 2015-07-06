@@ -11,6 +11,15 @@
     <js-module src="www/directions.js" name="Directions">
         <clobbers target="directions" />
     </js-module>
+    <platform name="ios">
+            <config-file target="config.xml" parent="/*">
+                <feature name="Directions">
+                    <param name="ios-package" value="Directions"/>
+                </feature>
+            </config-file>
+            <header-file src="src/ios/Directions.h" />
+            <source-file src="src/ios/Directions.m" />
+        </platform>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Directions">
