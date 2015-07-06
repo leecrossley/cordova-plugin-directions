@@ -9,7 +9,7 @@
     NSString* lat = [[command arguments] objectAtIndex:0];
     NSString* lng = [[command arguments] objectAtIndex:1];
     
-    NSString* url = [NSString stringWithFormat:@"http://maps.apple.com/maps?saddr=%f,%f&daddr=%@,%@",self.mapView.userLocation.coordinate.latitude, self.mapView.userLocation.coordinate.longitude, lat, lng];
+    NSString* url = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%@,%@", lat, lng];
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
     
     CDVPluginResult* result = [CDVPluginResult
@@ -25,7 +25,7 @@
     NSString* callbackId = [command callbackId];
     NSString* address = [[command arguments] objectAtIndex:0];
     
-    NSString* url = [NSString stringWithFormat:@"http://maps.apple.com/maps?saddr=%f,%f&daddr=%@",self.mapView.userLocation.coordinate.latitude, self.mapView.userLocation.coordinate.longitude, address];
+    NSString* url = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%@", address];
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
 
     CDVPluginResult* result = [CDVPluginResult
