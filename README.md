@@ -18,10 +18,10 @@ cordova plugin add https://github.com/leecrossley/cordova-plugin-directions.git
 
 #### PhoneGap build
 
-Add the following to your `config.xml` to use version 0.3.1 (you can also omit the version attribute to always use the latest version). You should now use the npm source:
+Add the following to your `config.xml` to use version 0.4.0 (you can also omit the version attribute to always use the latest version). You should now use the npm source:
 
 ```
-<gap:plugin name="cordova-plugin-directions" version="0.3.1" source="npm" />
+<gap:plugin name="cordova-plugin-directions" version="0.4.0" source="npm" />
 ```
 
 For more information, see the [PhoneGap build docs](http://docs.build.phonegap.com/en_US/configuring_plugins.md.html#Plugins).
@@ -38,7 +38,7 @@ Ensure you use the plugin after your `deviceready` event has been fired.
 directions.navigateTo("51.50722", "-0.12750"); // latitude, longitude
 ```
 
-### Navigate to an address (Android only)
+### Navigate to an address (not available for WP8)
 
 ```
 directions.navigateToAddress("123 Main St. Orlando, Florida"); // address
@@ -46,7 +46,7 @@ directions.navigateToAddress("123 Main St. Orlando, Florida"); // address
 
 ## Platforms
 
-Support for Android and Windows Phone 8. Address navigation is available on Android only.
+Support for iOS, Android and Windows Phone 8. Address navigation is not available for Windows Phone 8.
 
 ## License
 
