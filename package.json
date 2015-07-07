@@ -6,6 +6,7 @@
   "cordova": {
     "id": "cordova-plugin-directions",
     "platforms": [
+      "ios",
       "android",
       "wp8"
     ]
@@ -25,6 +26,7 @@
     "satnav",
     "address",
     "ecosystem:cordova",
+    "cordova-ios",
     "cordova-android",
     "cordova-wp8"
   ],
