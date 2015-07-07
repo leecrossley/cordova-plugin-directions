@@ -1,21 +1,21 @@
 {
-    "name": "cordova-plugin-directions",
-    "version": "0.3.2",
-    "author": "Shi Xiaxing <starsasumi@gmail.com>",
-    "description": "Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).",
-    "cordova": {
-        "id": "cordova-plugin-directions",
-        "platforms": [
+  "name": "cordova-plugin-directions",
+  "version": "0.3.3",
+  "author": "Lee Crossley <leee@hotmail.co.uk> (http://ilee.co.uk/)",
+  "description": "Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).",
+  "cordova": {
+    "id": "cordova-plugin-directions",
+    "platforms": [
+      "ios",
       "android",
-      "wp8",
-      "ios"
+      "wp8"
     ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/starsasumi/cordova-plugin-directions.git"
-    },
-    "keywords": [
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leecrossley/cordova-plugin-directions.git"
+  },
+  "keywords": [
     "cordova",
     "direction",
     "directions",
@@ -26,20 +26,20 @@
     "satnav",
     "address",
     "ecosystem:cordova",
+    "cordova-ios",
     "cordova-android",
-    "cordova-wp8",
-    "cordova-ios"
+    "cordova-wp8"
   ],
-    "engines": [
-        {
-            "name": "cordova",
-            "version": ">=3.0.0"
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
     }
   ],
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/starsasumi/cordova-plugin-directions/issues"
-    },
-    "homepage": "https://github.com/starsasumi/cordova-plugin-directions#readme"
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leecrossley/cordova-plugin-directions/issues"
+  },
+  "homepage": "https://github.com/leecrossley/cordova-plugin-directions#readme"
 }
