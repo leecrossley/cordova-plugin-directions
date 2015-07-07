@@ -1,4 +1,4 @@
-## Directions Plugin for Apache Cordova [![npm version](https://badge.fury.io/js/cordova-plugin-directions.svg)](http://badge.fury.io/js/cordova-plugin-directions)
+## Directions Plugin for Apache Cordova
 
 Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).
 
