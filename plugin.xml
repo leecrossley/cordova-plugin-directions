@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-directions" version="0.3.2">
+        id="cordova-plugin-directions" version="0.3.3">
     <name>Directions</name>
     <author>Lee Crossley (http://ilee.co.uk/)</author>
     <description>Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).</description>
@@ -20,7 +20,7 @@
         <source-file src="src/android/Directions.java" target-dir="src/uk/co/ilee/directions" />
     </platform>
     <platform name="wp8">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Directions">
                 <param name="wp-package" value="Directions"/>
             </feature>
