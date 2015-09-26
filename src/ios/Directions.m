@@ -11,9 +11,9 @@
     NSString* url;
     if (address != nil) {
         address = [address stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
-        url = [NSString stringWithFormat:@"http://maps.apple.com/maps?saddr=Current+Location&daddr=%@", address];
+        url = [NSString stringWithFormat:@"http://maps.apple.com/maps?saddr=here&daddr=%@", address];
     } else {
-        url = [NSString stringWithFormat:@"http://maps.apple.com/maps?saddr=Current+Location&daddr=%@, %@", lat, lng];
+        url = [NSString stringWithFormat:@"http://maps.apple.com/maps?saddr=here&daddr=%@, %@", lat, lng];
     }
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
 
