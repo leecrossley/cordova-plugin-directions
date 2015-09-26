@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-directions",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": "Lee Crossley <leee@hotmail.co.uk> (http://ilee.co.uk/)",
   "description": "Cordova Directions Plugin to utilise native maps for satnav style direction purposes (using latitude and longitude or address).",
   "cordova": {
